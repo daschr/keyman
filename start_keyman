@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+keyman="/opt/keyman/keyman.sh"
+
+
+nohup ncat -k -4 -l 7666 -e "$keyman" 2>/dev/null 2>&1 & 
